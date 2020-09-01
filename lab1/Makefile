@@ -11,4 +11,4 @@ flip.o:		flip.c flip.h
 	$(CC) $(CFLAGS) –c flip.c
 	
 clean:
-rm -rf *.o $(TARGET)
+	rm -rf *.o $(TARGET)
