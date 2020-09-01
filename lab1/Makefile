@@ -7,11 +7,11 @@ all:	$(TARGET)
 
 $(TARGET): flip.o
 	$(CC) $(CFLAGS) -o $@ flip.o
+	
+flip.o:		flip.c flip.h
 
 flip:		flip.o
 	$(CC) $(CFLAGS) –o $@ flip.o
-	
-flip.o:		flip.c flip.h
 
 flip.man:	
 	nroff -man flip.1 > flip.man
